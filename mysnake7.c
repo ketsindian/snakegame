@@ -4,8 +4,12 @@
 #define tabt printf("\t")
 #define endln printf("\n")
 #define scan(x) scanf("%d",&x);
+
+//field size can be changed here
 #define n1 40
 #define n2 40
+
+//structure for snake 
 struct Snake
 {
 	int head_x;
@@ -19,6 +23,8 @@ struct Snake
 		int node_y;
 	}node[100];
 };
+
+//structure for fruit
  struct Fruit
 {
 	int f_x;
@@ -31,6 +37,7 @@ int field[n1][n2];
 int ni=-1;
 int score =0;
 
+//get funcions print the positions on console
 void get_snake(struct Snake *p_s)
 {	
 	endln;
@@ -76,7 +83,7 @@ void get_nodes(struct Snake *p_s)
 	}
 }
 
-
+//set field function builds the game field
 void set_field(struct Snake *p_s ,struct Fruit *p_f)
 {
 	int i,j;
@@ -138,7 +145,7 @@ void print_arr()
 	}
 }
 
-
+//default position of snake 
 void defaulty(struct Snake *p_s,struct Fruit *p_f)
 {
 	p_s->head_x=n1/2;//(n1/2);
@@ -149,7 +156,7 @@ void defaulty(struct Snake *p_s,struct Fruit *p_f)
 	p_f->f_y=(n2/2);
 }
 
-
+//creates snake on game field from head position,tail position and nodes position 
 void connect_snake(struct Snake *p_s)
 {
 	int i,j,k;
@@ -308,7 +315,7 @@ void connect_snake(struct Snake *p_s)
 	}
 }
 
-
+//checks direction where snake is heading
 int check_direction_head(struct Snake *p_s)
 {
 	if(field[p_s->head_x][p_s->head_y]==field[p_s->head_x][p_s->head_y-1])
@@ -322,6 +329,8 @@ int check_direction_head(struct Snake *p_s)
 	else 
 		return 0;
 }
+
+//checks tail direction
 int check_direction_tail(struct Snake *p_s)
 {
 	if(field[p_s->tail_x][p_s->tail_y]==field[p_s->tail_x][p_s->tail_y-1])
@@ -353,6 +362,9 @@ int check_tail_node(struct Snake *p_s)
 		return c;
 	}
 }
+
+
+//node is created when snake takes turn and deleted when tail comes on prebuild node
 void delete_node(struct Snake *p_s,int c)
 {
 	int k;
@@ -370,6 +382,7 @@ void create_node(struct Snake *p_s)
 	endln;
 }
 
+//algorithm for generation of fruit position
 void update_Fruit(struct Snake *p_s,struct Fruit *p_f)
 {
 	int sum_x,sum_y;
