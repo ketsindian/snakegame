@@ -1,0 +1,51 @@
+Python VS JAVA
+
+The biggest similarity is their "(almost) everything is an object" design and their reputation for excellent cross-platform support, as well as things like immutable strings and deep, relatively standard libraries.
+Both languages are compiled down to bytecodes that run on virtual machines, although Python generally does this automatically at runtime and Java has a separate program (javac) that does it. 
+ Python's use of syntactically-significant whitespace sets it a little further apart from the mainstream than Java, which is comfortably familiar in its C-like use of braces and semi-colons
+
+ The biggest difference between the two languages is that Java is a statically typed and Python is a dynamically typed.
+ This makes Python very easy to write and not too bad to read, but difficult to analyze
+
+Python a great prototyping language, and is also what makes it a good teaching language and a good language for people who aren't software professionals. Professionals care about types, and actually enjoy threading the maze of arcane type rules imposed by strongly typed languages to create, clean, powerful systems that are provably type-safe. Everyone else just wants to get their job done.
+
+One of the most important differences between Python and Java is that Python is dynamically typed, whereas Java is statically typed. This means that in Python, it is not necessary to declare the type of the variable when writing code. Python is also popular and well known for being concise and readable, allowing the developer to do the same things with fewer lines of code.
+
+Both of these features make developing applications in Python much faster than in Java. Some people claim that a developer can be up to ten times more productive when writing in Python. Despite this, you could argue that Java’s static type system makes it less prone to bugs than Python.
+
+Python is an interpreted language, whereas Java is compiled. This means that if speed is the primary concern for your project, neither language particularly shines in this area, but between the two, Java has the edge in most environments.
+Where security is a high priority, Java may have an edge. Although a good programmer can write a very secure app in Python, Java is commonly used for banking web applications due to its particular strength in security functionality and environment. Java includes access to certain security features such as cryptography, and advanced authentication and access control that keep your web application secure. It is worth noting, however, that the characteristics of Python make it the top choice among FinTech companies.
+
+Java architecture: -JVM (Java Virtual Machine) is an engine that gives runtime environment to operate the Java Code. It turns Java bytecode into machines language. JVM is a chunk of JRE (Java Run Environment)
+Python Interpreter translates your source code into machine-independent bytecode (. pyc).
+Stores .pyc file __PyCache__ folder.
+When you run the same program (Without changes) then it will use this bytecode without translating it again.
+Byte Code (. pyc) will be shipped to PVM. It executes the code.
+
+https://pythonconquerstheuniverse.wordpress.com/2009/10/03/python-java-a-side-by-side-comparison/
+
+Jshell 
+
+So python originated beacuse of the need of faster prototyping and coding for nontechnical people
+
+Getting started :
+1. Python is very high level language unlike c/ C++
+2. it has high-level data types built in, such as flexible arrays and dictionaries. Because of its more general data types Python is applicable to a much larger problem domain 
+3. main features of python
+    the high-level data types allow you to express complex operations in a single statement;
+    statement grouping is done by indentation instead of beginning and ending brackets;
+    no variable or argument declarations are necessary.
+4.Python allows you to split your program into modules that can be reused in other Python programs. It comes with a large collection of standard modules that you can use as the basis of your programs — or as examples to start learning to program in Python. Some of these modules provide things like file I/O, system calls, sockets, and even interfaces to graphical user interface toolkits like Tk.
+5.Python is an interpreted language, which can save you considerable time during program development because no compilation and linking is necessary. The interpreter can be used interactively, which makes it easy to experiment with features of the language, to write throw-away programs, or to test functions during bottom-up program development. It is also a handy desk calculator.
+
+
+
+Start with demo
+
+
+Show interpreter 
+
+
+help-- docstrings
+more on strings
+
